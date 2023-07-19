@@ -13,7 +13,10 @@ app.use(express.json());
 
 app.use("/api/v1", apiv1Router)
 app.use("/api/v2", apiv2Router)
+app.get('/', (req, res, next) =>{
+    res.send('Hello World')    
 
+})
 
 
 
